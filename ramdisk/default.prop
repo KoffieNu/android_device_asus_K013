@@ -1,0 +1,20 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.gnss.sv.status=true
+persist.dual_sim=none
+ro.carrier=wifi-only
+coreu.dpst.aggressiveness=2
+ro.com.google.clientidbase=android-asus-rev
+ro.secure=1
+ro.allow.mock.location=0
+ro.debuggable=0
+persist.ril-daemon.disable=0
+ro.zygote=zygote32
+persist.sys.usb.config=mtp
+ro.dalvik.vm.native.bridge=libhoudini.so
+ro.adb.secure=1
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m

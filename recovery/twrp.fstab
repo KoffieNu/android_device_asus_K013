@@ -1,0 +1,25 @@
+#FILE GENERATED FROM /original.fstab
+
+/reserved emmc /dev/block/by-name/reserved 
+/metadata emmc /dev/block/by-name/metadata 
+/ESP vfat /dev/block/by-name/ESP flags=display="ESP";backup=1
+/boot emmc /dev/block/by-name/boot 
+/recovery emmc /dev/block/by-name/recovery flags=backup=1
+/fastboot emmc /dev/block/by-name/fastboot flags=display="Fastboot";backup=1
+/reserved_1 emmc /dev/block/by-name/reserved_1 
+/panic emmc /dev/block/by-name/panic 
+/factory ext4 /dev/block/by-name/factory flags=display="Factory";backup=1
+/misc emmc /dev/block/by-name/misc 
+/config ext4 /dev/block/by-name/config flags=display="Config";backup=1
+/cache ext4 /dev/block/by-name/cache 
+/APD ext4 /dev/block/by-name/APD 
+/ADF ext4 /dev/block/by-name/ADF 
+/system ext4 /dev/block/by-name/system 
+/data ext4 /dev/block/by-name/data 
+/external_sd auto /dev/block/mmcblk1p1 flags=display="MicroSD";storage;removable
+
+#Added for usb-otg
+/usb_otg auto /dev/block/sda1 flags=display="USB-OTG";storage;removable
+
+#Added to enable backing up system as an image
+/system_image emmc /dev/block/by-name/system 

@@ -1,0 +1,26 @@
+atomisp-css2401a0_v21.ko: videobuf-vmalloc.ko videobuf-core.ko
+videobuf2-core.ko:
+bcm_bt_lpm.ko:
+ax88179_178a.ko:
+vtsspp.ko:
+tntfs.ko:
+dm9601.ko:
+SOCWATCH1_5.ko:
+atomisp-css2400b0_v21.ko: videobuf-vmalloc.ko videobuf-core.ko
+uvcvideo.ko: videobuf2-core.ko videobuf2-vmalloc.ko videobuf2-memops.ko
+videobuf-vmalloc.ko: videobuf-core.ko
+fps_throttle.ko:
+mac80211.ko:
+videobuf2-memops.ko:
+texfat.ko:
+hdmi_audio.ko:
+libmsrlisthelper.ko:
+videobuf-core.ko:
+pax.ko:
+atomisp-css2401a0_legacy_v21.ko: videobuf-vmalloc.ko videobuf-core.ko
+vxd392.ko:
+cdc_ncm.ko:
+sep3_15.ko:
+cdc_ether.ko:
+videobuf2-vmalloc.ko: videobuf2-memops.ko
+asix.ko:

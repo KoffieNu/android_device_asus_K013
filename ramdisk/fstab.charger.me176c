@@ -1,0 +1,4 @@
+/dev/block/by-name/system	/system	ext4	ro,noatime	wait
+*/block/sd*              	/Removable/USBdisk1	vfat	None	wait,noemulatedsd,voldmanaged=USBdisk1:auto
+*/block/sd*              	/Removable/USBdisk2	vfat	None	wait,noemulatedsd,voldmanaged=USBdisk2:auto
+*/block/mmcblk1*         	/Removable/MicroSD	vfat	None	wait,noemulatedsd,voldmanaged=MicroSD:auto
