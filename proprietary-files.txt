@@ -210,6 +210,8 @@ lib/libaudioresample.so
 lib/libcamera_defocus.so
 lib/libcamera_pano.so
 lib/libcameraap.so
+lib/libdrm.so
+lib/libdrm_intel.so
 lib/libevent-listener.so
 lib/libhoudini.so
 lib/libhwcwidi.so

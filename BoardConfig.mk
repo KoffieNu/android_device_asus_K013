@@ -15,12 +15,13 @@
 #
 
 # Inline kernel building
-TARGET_KERNEL_SOURCE := kernel/lenovo/baytrail
+# TARGET_KERNEL_SOURCE := kernel/asus/K013
 TARGET_KERNEL_ARCH := x86_64
 BOARD_KERNEL_IMAGE_NAME := bzImage
 TARGET_KERNEL_CONFIG := cyanogenmod_K013_8_defconfig
 
 # Disable building until we really support them.
+TARGET_NO_KERNEL := true
 TARGET_NO_RECOVERY := true
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
