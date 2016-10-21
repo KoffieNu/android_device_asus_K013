@@ -15,14 +15,14 @@
 #
 
 # Inline kernel building
-#TARGET_KERNEL_SOURCE := kernel/asus/K013
-#TARGET_KERNEL_ARCH := x86_64
-#BOARD_KERNEL_IMAGE_NAME := bzImage
-#TARGET_KERNEL_CONFIG := cyanogenmod_K013_8_defconfig
+ifneq ($(wildcard kernel/asus/K013/cyanogenmod_K013_8_defconfig),)
+TARGET_KERNEL_SOURCE := kernel/asus/K013
+TARGET_KERNEL_ARCH := x86_64
+BOARD_KERNEL_IMAGE_NAME := bzImage
+TARGET_KERNEL_CONFIG := cyanogenmod_K013_8_defconfig
+endif
 
 # Disable building until we really support them.
-TARGET_NO_KERNEL := true
-TARGET_NO_RECOVERY := true
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 include device/intel/baytrail-common/BoardConfigCommon.mk
@@ -43,7 +43,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x0071bc20
-BOARD)RAMDISK_OFFSET := 0x00144e00
+BOARD_RAMDISK_OFFSET := 0x00144e00
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1879048192

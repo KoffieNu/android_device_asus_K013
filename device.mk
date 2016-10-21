@@ -15,7 +15,9 @@
 #
 #
 
+ifeq ($(wildcard kernel/asus/K013/cyanogenmod_K013_8_defconfig),)
 include device/asus/K013/prebuilts/kernel/prebuilt_kernel.mk
+endif
 
 # we do this little trick to fall back to other density if the hdpi doesn't exist.
 PRODUCT_AAPT_CONFIG := normal large xlarge ldpi mdpi hdpi
@@ -49,9 +51,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
   intel_prop \
+  pclinkd \
   thermald \
   uefivar \
-  uefivar_nolog
+  uefivar_nolog \
+  upi_ug31xx
 
 # Use the non-open-source-parts, if they're present
 $(call inherit-product-if-exists, vendor/asus/K013/K013-vendor.mk)
