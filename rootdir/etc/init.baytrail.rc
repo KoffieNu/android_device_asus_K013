@@ -113,6 +113,11 @@ on boot
     write /proc/sys/vm/dirty_background_bytes 25165824
 
 on post-fs-data
+service loggy /system/bin/sh /loggy.sh
+    class main
+    user root
+    oneshot
+    
     # we will remap this as /mnt/sdcard with the sdcard fuse tool
     mkdir /data/media 0770 media_rw media_rw
     chown media_rw media_rw /data/media
