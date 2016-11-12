@@ -14,10 +14,11 @@
 # limitations under the License.
 #
 
+TARGET_KERNEL_ARCH := x86_64
+
 # Inline kernel building
 ifneq ($(wildcard kernel/asus/K013/cyanogenmod_K013_8_defconfig),)
 TARGET_KERNEL_SOURCE := kernel/asus/K013
-TARGET_KERNEL_ARCH := x86_64
 BOARD_KERNEL_IMAGE_NAME := bzImage
 TARGET_KERNEL_CONFIG := cyanogenmod_K013_8_defconfig
 endif
@@ -50,9 +51,6 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1879048192
 BOARD_USERDATAIMAGE_PARTITION_SIIZE := 12285078528
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
-
-# adbd fix
-BOARD_FUNCTIONFS_HAS_SS_COUNT := true
 
 # Bluetooth :
 BOARD_HAVE_BLUETOOTH := true
