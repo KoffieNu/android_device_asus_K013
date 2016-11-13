@@ -110,7 +110,10 @@ etc/cms_device_config.xml
 etc/cms_throttle_config.xml
 etc/ingredients.conf
 vendor/etc/CsmConfig.xml
-
+lib/libiacp.so
+lib/libmix_videovpp.so
+lib/libxditk_DIT_BayTrail.so
+# libOpenCL.so needs to be symlinked to LibPVR0CL.so
 #------------------------------------------------------------------------------#
 # Audio : use prebuilt libtinyalsa.so & libtinycompress.so until fixed
 #------------------------------------------------------------------------------#
